@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientForm">
+   <children>
+      <GridPane layoutX="281.0" prefHeight="378.0" prefWidth="319.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First Name:" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Middle Initial:" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number:" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Zipcode:" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="State:" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="City:" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Plan Type:" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextField id="txtFirstName" GridPane.columnIndex="1" />
+            <TextField id="txtLastName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField id="txtInitial" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField id="txtPhoneNumber" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField id="txtZipcode" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField id="txtState" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField id="txtCity" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField id="txtPlanType" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Button id="btnSubmit" mnemonicParsing="false" prefHeight="43.0" prefWidth="87.0" text="Submit" GridPane.halignment="CENTER" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </Button>
+            <Button id="btnExit" mnemonicParsing="false" prefHeight="44.0" prefWidth="88.0" text="Exit" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Cambria" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="7.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="39.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="409.0" fitWidth="294.0" layoutY="-1.0">
+         <image>
+            <Image url="@Images/weightroom.jpg" />
+         </image>
+      </ImageView>
+      <Text id="lblSuccess" layoutX="397.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="87.0" />
+   </children>
+</AnchorPane>
