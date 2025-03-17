@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientForm">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientController">
    <children>
       <GridPane layoutX="281.0" prefHeight="378.0" prefWidth="319.0">
         <columnConstraints>
@@ -70,20 +70,20 @@
                   <Font name="Cambria Bold" size="18.0" />
                </font>
             </Text>
-            <TextField id="txtFirstName" GridPane.columnIndex="1" />
-            <TextField id="txtLastName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField id="txtInitial" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField id="txtPhoneNumber" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <TextField id="txtZipcode" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <TextField id="txtState" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <TextField id="txtCity" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <TextField id="txtPlanType" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-            <Button id="btnSubmit" mnemonicParsing="false" prefHeight="43.0" prefWidth="87.0" text="Submit" GridPane.halignment="CENTER" GridPane.rowIndex="8">
+            <TextField id="txtFirstName" fx:id="txtFirstName" GridPane.columnIndex="1" />
+            <TextField id="txtLastName" fx:id="txtLastName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField id="txtInitial" fx:id="txtInitial" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField id="txtPhoneNumber" fx:id="txtPhoneNumber" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField id="txtZipcode" fx:id="txtZipcode" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField id="txtState" fx:id="txtState" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField id="txtCity" fx:id="txtCity" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField id="txtPlanType" fx:id="txtPlanType" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Button id="btnSubmit" fx:id="btnSubmit" mnemonicParsing="false" prefHeight="43.0" prefWidth="87.0" text="Submit" GridPane.halignment="CENTER" GridPane.rowIndex="8">
                <font>
                   <Font name="Cambria" size="18.0" />
                </font>
             </Button>
-            <Button id="btnExit" mnemonicParsing="false" prefHeight="44.0" prefWidth="88.0" text="Exit" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8">
+            <Button id="btnExit" fx:id="btnExit" mnemonicParsing="false" prefHeight="44.0" prefWidth="88.0" text="Exit" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8">
                <font>
                   <Font name="Cambria" size="18.0" />
                </font>
@@ -97,6 +97,6 @@
             <Image url="@Images/weightroom.jpg" />
          </image>
       </ImageView>
-      <Text id="lblSuccess" layoutX="361.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="159.0" />
+      <Text id="lblSuccess" fx:id="lblSuccess" layoutX="361.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="159.0" />
    </children>
 </AnchorPane>
