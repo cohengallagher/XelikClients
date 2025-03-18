@@ -1,6 +1,7 @@
 // Cohen Gallagher - 3/7/25
 
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -50,7 +51,14 @@ public class ClientController implements Initializable {
         String state = txtState.getText().trim();
         String city = txtCity.getText().trim();
         String planType = txtPlanType.getText().trim();
-
+        txtFirstName.clear();
+        txtLastName.clear();
+        txtInitial.clear();
+        txtPhoneNumber.clear();
+        txtZipcode.clear();
+        txtState.clear();
+        txtCity.clear();
+        txtPlanType.clear();
         //Try to save client to database
 
         try {
@@ -67,9 +75,11 @@ public class ClientController implements Initializable {
                 lblSuccess.setText("Failed to insert client.");
             }
         } catch (Exception e) {
+            lblSuccess.setTextFill(Color.INDIANRED);
+            lblSuccess.setText("Error: " + e.getMessage());
+            e.printStackTrace();
         }
     }
-
     @FXML
     private void exitApplication() {
         Platform.exit();

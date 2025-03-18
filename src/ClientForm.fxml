@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -78,12 +79,12 @@
             <TextField id="txtState" fx:id="txtState" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <TextField id="txtCity" fx:id="txtCity" GridPane.columnIndex="1" GridPane.rowIndex="6" />
             <TextField id="txtPlanType" fx:id="txtPlanType" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-            <Button id="btnSubmit" fx:id="btnSubmit" mnemonicParsing="false" prefHeight="43.0" prefWidth="87.0" text="Submit" GridPane.halignment="CENTER" GridPane.rowIndex="8">
+            <Button id="btnSubmit" fx:id="btnSubmit" mnemonicParsing="false" onAction="#submitNewBook" prefHeight="43.0" prefWidth="87.0" text="Submit" GridPane.halignment="CENTER" GridPane.rowIndex="8">
                <font>
                   <Font name="Cambria" size="18.0" />
                </font>
             </Button>
-            <Button id="btnExit" fx:id="btnExit" mnemonicParsing="false" prefHeight="44.0" prefWidth="88.0" text="Exit" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8">
+            <Button id="btnExit" fx:id="btnExit" mnemonicParsing="false" onAction="#exitApplication" prefHeight="44.0" prefWidth="88.0" text="Exit" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8">
                <font>
                   <Font name="Cambria" size="18.0" />
                </font>
@@ -97,6 +98,7 @@
             <Image url="@Images/weightroom.jpg" />
          </image>
       </ImageView>
-      <Text id="lblSuccess" fx:id="lblSuccess" layoutX="361.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="159.0" />
+      <Label fx:id="lblSuccess" alignment="CENTER" contentDisplay="CENTER" layoutX="369.0" layoutY="386.0" prefHeight="17.0" prefWidth="143.0" textAlignment="CENTER" />
+      
    </children>
 </AnchorPane>
