@@ -13,6 +13,7 @@ public class ClientDatabaseManager {
     public static boolean insertClient(Client client) throws SQLException {
         String sql = "INSERT INTO clients (firstName, lastName, initial, phoneNumber, zipcode, state, city, planType) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
+        // Statements fpr insertions
         try (Connection conn = connectToDatabase()) {
             PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
 
@@ -44,6 +45,7 @@ public class ClientDatabaseManager {
         }
     }
 
+    // Get clients from database
     public static ArrayList<Client> getAllClients() throws SQLException {
         String sql = "SELECT [Id], [firstName], [lastName], [initial], [phoneNumber], [zipcode], [state], [city], [planType] FROM [dbo].[clients]";
         ArrayList<Client> clientList = new ArrayList<>();
@@ -69,6 +71,7 @@ public class ClientDatabaseManager {
         return clientList; // Return the list of clients (empty if no clients found)
     }
 
+    // Retrieve a client based on ID
     public static Client getClientById(int ClientId) throws SQLException {
         String sql = "SELECT [Id], [firstName], [lastName], [initial], [phoneNumber], [zipcode], [state], [city], [planType] FROM [dbo].[clients]\" WHERE Id = ?";
 

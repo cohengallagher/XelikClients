@@ -23,7 +23,6 @@ public class Client {
     }
 
     // Getters
-
     public String getFirstName() {
         return firstName;
     }
@@ -57,7 +56,6 @@ public class Client {
     }
 
     // Setters
-
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }

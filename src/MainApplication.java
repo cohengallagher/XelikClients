@@ -10,11 +10,11 @@ import java.io.IOException;
 public class MainApplication extends Application {
 
     // Runs the fxml file to display a GUI
-
     public static void main(String[] args) {
         launch(args);
     }
 
+    // Main stage
     @Override
     public void start(Stage primaryStage) throws IOException {
 

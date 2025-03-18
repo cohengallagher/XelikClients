@@ -14,6 +14,8 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class ClientController implements Initializable {
+
+    // Buttons
     public Button btnExit;
     public Button btnSubmit;
 
@@ -21,6 +23,7 @@ public class ClientController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
     }
 
+    //Text fields
     @FXML
     private TextField txtFirstName;
     @FXML
@@ -40,7 +43,7 @@ public class ClientController implements Initializable {
     @FXML
     private Label lblSuccess;
 
-    // Submit button, inputs books into the database by parsing them from text boxes
+    // Submit button, inputs clients into the database by parsing them from text boxes
     @FXML
     private void submitNewBook() {
         String firstName = txtFirstName.getText().trim();

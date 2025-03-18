@@ -5,6 +5,7 @@ import java.util.List;
 
 public class ClientValidator {
 
+    // Error list
     public static List<String> validateClient(Client client) {
         List<String> errors = new ArrayList<>();
 
@@ -36,6 +37,7 @@ public class ClientValidator {
         return errors; // Return list of validation errors (empty if no errors)
     }
 
+    // Check for correct formatting
     private static boolean isValidFirstName(String firstName) {
         return firstName != null && !firstName.trim().isEmpty() && firstName.length() <= 50;
     }
